@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="Eco-Essence.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper"> 
+        <form action="signup_process.php" method="POST" onsubmit="return handleSignup(event)">
+            <h1>Signup</h1>
+
+            <div class="input-box">
+                <input type="text" name="fullname" id="fullname" placeholder="Your Full Name*" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="text" name="username" id="username" placeholder="Choose a Username*" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="email" name="email" id="email" placeholder="Email Id*" required>
+                <i class='bx bxl-gmail'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" name="password" id="password" placeholder="Enter Password*" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" name="confirm_password" id="confirm_password" placeholder="Re-enter Password*" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <button type="submit" class="btn">Signup</button>
+
+            <div class="register-link">
+                <p>Already have an account? <a href="Login Page.html">Login Here</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function handleSignup(event) {
+            event.preventDefault(); // Prevent actual form submission
+
+            let fullname = document.getElementById("fullname").value;
+            let username = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirm_password").value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return false;
+            }
+
+            // Store credentials in local storage (for testing purposes)
+            localStorage.setItem("registeredUsername", username);
+            localStorage.setItem("registeredEmail", email);
+            localStorage.setItem("registeredPassword", password);
+
+            alert("Signup successful! Redirecting to Login page...");
+            window.location.href = "Login Page.html"; // Redirect to Login Page
+        }
+    </script>
+
+</body>
+</html>

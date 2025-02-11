@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore | Eco-Essence</title>
+    <link rel="stylesheet" href="Eco-Essence.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <style>
+        /* Full-screen background styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('Background Image.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Grid sections */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .grid-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .grid-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        .grid-item i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Clickable category links */
+        .category-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .category-link:hover {
+            text-decoration: underline;
+            color: #28a745;
+        }
+
+        /* Navigation Buttons */
+        .btn-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Explore Our Products</h1>
+        <p>Pure, Green, Clean - Nature's Touch in Every Use!</p>
+
+        <!-- Grid Sections -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3><a href="soaps.html" class="category-link"><u>Soaps</u></a></h3>
+                <ul style="text-align: center; list-style: none;">
+                    <li>Honey & Oatmeal</li>
+                    <li>Charcoal & Tea Tree</li>
+                    <li>Aloe Vera & Tea Tree</li>
+                    <li>Turmeric & Vitamin E</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3><a href="Stationary.html" class="category-link"><u>Stationary Supplies</u></a></h3>
+                <ul style="text-align: center; list-style: none;">
+                    <li> &#9851; Paper Notebooks</li>
+                    <li>Plant-Based Pens</li>
+                    <li>Wooden Rulers</li>
+                    <li>Plant-Based Glue</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3><a href="kitchen.html" class="category-link"><u>Kitchen & Dining</u></a></h3>
+                <ul style="text-align: center; list-style: none;">
+                    <li> Bamboo Straws</li>
+                    <li> &#9851; Coffee Cups</li>
+                    <li>Compost Bin</li>
+                    <li>Cloth Napkins</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3><a href="household.html" class="category-link"><u>Household Essentials</u></a></h3>
+                <ul style="text-align: center; list-style: none;">
+                    <li> Bamboo Toothbrush</li>
+                    <li> &#9851; Shopping Bags</li>
+                    <li> &#127807;Cleaning Products</li>
+                    <li>Bamboo Dish Brush</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="btn-container">
+            <a href="Home.html" class="btn">Home</a>
+            <a href="Signup Page.html" class="btn">Sign Up</a>
+            <a href="Login Page.html" class="btn">Login</a>
+        </div>
+    </div>
+
+<!-- Full-Width Footer Section -->
+<footer style="
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+">
+    <div style="max-width: 900px; margin: 0 auto;">
+        <h2 style="margin-bottom: 10px;">About Eco-Essence</h2>
+        <p style="font-size: 1.1rem; line-height: 1.4;">
+            At Eco-Essence, we provide sustainable, high-quality alternatives to everyday products, 
+            helping you reduce waste and protect the planet. Our eco-friendly essentials are biodegradable, 
+            reusable, and recyclable—designed for a greener future. Join us in making a difference, one choice at a time.
+        </p>
+        <p style="margin-top: 20px; font-size: 0.9rem;">&copy; 2025 Eco-Essence. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
