@@ -9,7 +9,7 @@
 
 /* Default background settings for large screens */
 body {
-    background-image: url('your-image.jpg');
+    background-image: url('Backgound Image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body {
 /* Small screens (phones) */
 @media (max-width: 768px) {
     body {
-        background-image: url('your-image-mobile.jpg');
+        background-image: url('Backgound Image.jpg');
         background-size: contain;
         background-position: center;
     }
